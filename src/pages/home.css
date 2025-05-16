@@ -1,0 +1,182 @@
+.home {
+    background-color: #000;
+    position: relative;
+    overflow: hidden;
+}
+
+.home > main{
+    background-color: #000;
+    color: var(--color--white);
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1420px;
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    padding: 0 5%;
+    overflow: hidden;
+
+     &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(0deg, #000000, #00000000);
+        z-index: -2;
+    }
+
+    @media (max-width: 768px){
+        flex-direction: column-reverse;   
+        padding: 30% 5% 5% 5%; 
+        min-height: auto;
+    }
+
+    & .home-texts{
+        width: 50%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 768px){
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        & .home-badge-top{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+
+            @media (max-width: 768px){
+                justify-content: center;
+                position: relative;
+                z-index: 5;
+            }
+
+            & div {
+                padding: 5px;
+                border-radius: 5px;
+                background: #bb000010;
+                border: 1px solid #bb000010;
+
+                & i {
+                    color: #bb0000;
+                }
+            }
+
+            & span {
+                color: #ffffff75;
+                font-size: 14px;
+                font-weight: 300;
+
+                @media (max-width: 768px){
+                    font-size: 12px;
+                }
+            }
+        }
+
+        & h1 {
+            font-size: 65px;
+            font-family: var(--font--bebas);
+            line-height: 100%;
+
+            @media (max-width: 768px){
+                font-size: 36px;
+                text-align: center;
+            }
+
+            & b {
+                font-family: var(--font--bebas);
+                color: transparent;
+                background: linear-gradient(90deg, var(--color--red), var(--color--dark--red));
+                -webkit-background-clip: text;
+            }
+        }
+
+        & p {
+            font-size: 20px;
+            font-weight: 300;
+            width: 80%;
+            padding-bottom: 20px;
+
+            @media (max-width: 768px){
+                width: 100%;
+                text-align: center;
+                font-size: 16px;
+            }
+        }
+
+        & div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 10px;
+
+            @media (max-width: 768px){
+                flex-direction: column;
+            }
+        }
+
+        & .home-badge-bottom {
+            border-left: 2px solid var(--color--white);
+            background-color: #ffffff10;
+            width: max-content;
+            padding: 3px 10px 3px 5px;
+            position: relative;
+            margin-top: 15px;
+
+            & span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    & picture {
+        width: 50%;
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 768px){
+            width: 100%;
+        }
+
+        & img {
+            position: absolute;
+            object-fit: contain;
+            transform: scale(1.8);
+
+            @media (max-width: 768px){
+                position: relative;
+            }
+
+            &:nth-child(1){
+                z-index: 3!important;
+            }
+
+            &:nth-child(2){
+                z-index: -1;
+                mix-blend-mode: hard-light;
+
+                @media (max-width: 768px){
+                    position: absolute;
+                }
+            }
+        }
+    }
+}
+  

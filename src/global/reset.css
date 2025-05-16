@@ -1,0 +1,126 @@
+/* RESET CSS UNIVERSAL + iPhone adjustments */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove margin, padding e border padrão */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, menu, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+/* Base settings */
+body {
+  line-height: 1;
+  -webkit-text-size-adjust: 100%; /* iOS Safari: evita zoom automático em fontes pequenas */
+  -webkit-font-smoothing: antialiased; /* Suavização em iOS */
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Listas sem estilos */
+ol, ul {
+  list-style: none;
+}
+
+/* Links sem underline e sem cor padrão */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tabelas sem espaçamento */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Botões e inputs sem estilo padrão */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* Corrige autofill amarelo no iOS e Chrome */
+input:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #000;
+}
+
+/* Cursor padrão para botões */
+button {
+  cursor: pointer;
+}
+
+/* Imagens responsivas */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Scroll suave */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Remove estilo de formatação em quotes */
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+
+/* Formatação de strong e em */
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+
+/* iOS fix: evita que input seja aumentado em foco */
+@media screen and (max-width: 768px) {
+  input, textarea, select {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,51 @@
+.c-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+
+    & .c-badge {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+
+        & div {
+          padding: 5px;
+          background-color: #bb000010;
+          border: 1px solid #bb000010;
+          border-radius: 5px;     
+          
+          & i {
+            color: var(--color--red);
+          }
+        }
+
+        & span {
+            font-size: 14px;
+            font-weight: 300;
+            opacity: 0.8;
+        }
+    }
+
+    & h1 {
+        font-size: 45px;
+        font-family: var(--font--bebas);
+        width: 50%;
+        text-align: center;
+
+        @media(max-width: 768px){
+            font-size: 32px;
+            width: 100%;
+        }
+
+        & b {
+            font-family: var(--font--bebas);
+            color: transparent;
+            background: linear-gradient(90deg, var(--color--red), var(--color--dark--red));
+            -webkit-background-clip: text;
+        }
+    }
+}

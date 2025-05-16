@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color--red: #BB0000;
+    --color--dark--red: #550000;
+    --color--black: #000000;
+    --color--white: #f1f1f1;
+
+    --font--bebas: "Bebas Neue", sans-serif; 
+    --font--urbanist: "Urbanist", sans-serif;
+}

@@ -1,0 +1,98 @@
+.portfolio {
+    background-color: var(--color--white);
+    position: relative;
+    z-index: 0;
+    width: 100%;
+
+     &::before{
+        content: '';
+        width: 50%;
+        height: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -10%;
+        background-image: url('/public/effect-lines.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        opacity: 0.1;
+        z-index: -2;
+
+        @media (max-width: 768px){
+            width: 65%;
+            height: 65%;
+            top: -20%;       
+        }
+    }
+}
+
+.portfolio > main {
+    color: var(--color--black);
+    width: 100%;
+    height: auto;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 1420px;
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    padding: 5%;
+    gap: 30px;
+
+    & .splide-portfolio {
+        width: 100%;
+        height: auto;
+        position: relative;
+
+        & .my-slider-progress {
+            position: relative;
+            height: 4px;
+            background: #1d1d1d;
+            margin-top: 1rem;
+            border-radius: 20px;
+        }
+
+        & .my-slider-progress-bar {
+            height: 100%;
+            width: 0%;
+            background: var(--color--red);
+            transition: width 0.3s ease;
+        }
+
+        & > .splide__track {
+            width: 100%;
+            height: 100%;
+
+            & > .splide__list{
+                height: 500px;
+                width: 100%;
+
+                & > .splide__slide {
+                    border-radius: 10px;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 100%;
+
+                    & img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+    }
+
+    & .portfolio-buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+}

@@ -115,11 +115,22 @@
             </div>
         </article>
         <div class="mobile-bar">
-            <button>
-                <i class="fa-solid fa-bars"></i>
+            <button id="menu-toggle">
+                <i id="menu-icon" class="fa-solid fa-bars"></i>
             </button>
         </div>
     </nav>
+
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li data-aos="fade-left" data-aos-delay=""><a href="#">Início</a></li>
+            <li data-aos="fade-left" data-aos-delay="150"><a href="#solucoes">Soluções</a></li>
+            <li data-aos="fade-left" data-aos-delay="300"><a href="#portfolio">Portfolio</a></li>
+            <li data-aos="fade-left" data-aos-delay="450"><a href="#sobre">Yago Lopes</a></li>
+            <li data-aos="fade-left" data-aos-delay="600"><a href="#experiencia">Experiências</a></li>
+            <li data-aos="fade-left" data-aos-delay="750"><a href="#eventos">Eventos</a></li>
+        </ul>
+    </div>
     
 </header>
 
@@ -665,6 +676,7 @@ https://cdn.jsdelivr.net/npm/@splidejs/splide-extension-auto-scroll@0.5.3/dist/j
 
 <script src="src/js/slide-portfolio.js"></script>
 <script src="src/js/splide-solucoes.js"></script>
+<script src="src/js/sidebar.js"></script>
 <script>
   AOS.init({
     offset: 0, // distância em pixels do gatilho de scroll

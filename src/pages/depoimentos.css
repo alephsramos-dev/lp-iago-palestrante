@@ -35,6 +35,10 @@
     gap: 50px;
     padding: 5%;
 
+    @media (max-width: 768px){    
+        padding: 10% 5%;
+    }
+
     & .depoimentos-content {
         width: 100%;
         height: auto;

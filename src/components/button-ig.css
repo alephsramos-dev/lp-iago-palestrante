@@ -10,8 +10,8 @@
     #bc1888 100%
   );
   color: #fff;
-  width: 75px;
-  height: 75px;
+  width: 65px;
+  height: 65px;
   border-radius: 50%;
   overflow: hidden;
   display: grid;
@@ -32,10 +32,10 @@
   animation: text-rotation 8s linear infinite;
 
   & > span {
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     transform: rotate(calc(18deg * var(--index)));
-    inset: 2px;
+    inset: 0.5px;
   }
 }
 

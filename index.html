@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="src/pages/portfolio.css">
     <link rel="stylesheet" href="src/pages/sobre.css">
     <link rel="stylesheet" href="src/pages/depoimentos.css">
+    <link rel="stylesheet" href="src/partials/footer.css">
 
     <!-- Components -->
     <link rel="stylesheet" href="src/components/c-header.css">
@@ -25,13 +26,14 @@
     <link rel="stylesheet" href="src/components/c-button-shine.css">
     <link rel="stylesheet" href="src/components/c-button-effect.css">
     <link rel="stylesheet" href="src/components/button-ig.css">
+    <link rel="stylesheet" href="src/components/background-grid-2.css">
 
     <!-- Links de bibliotecas -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
-
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <title>Yago Lopes | Palestrante</title>
 </head>
@@ -91,23 +93,23 @@
 </button>
     
 <header class="header">
-    <h1>Yago Lopes</h1>
+    <h1 data-aos="zoom-in" data-aos-delay="">Yago Lopes</h1>
     <nav class="navbar">
         <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#solucoes">Soluções</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#sobre">Yago Lopes</a></li>
-            <li><a href="#experiencia">Experiências</a></li>
-            <li><a href="#eventos">Eventos</a></li>
+            <li data-aos="fade-left" data-aos-delay=""><a href="#">Início</a></li>
+            <li data-aos="fade-left" data-aos-delay="150"><a href="#solucoes">Soluções</a></li>
+            <li data-aos="fade-left" data-aos-delay="300"><a href="#portfolio">Portfolio</a></li>
+            <li data-aos="fade-left" data-aos-delay="450"><a href="#sobre">Yago Lopes</a></li>
+            <li data-aos="fade-left" data-aos-delay="600"><a href="#experiencia">Experiências</a></li>
+            <li data-aos="fade-left" data-aos-delay="750"><a href="#eventos">Eventos</a></li>
         </ul>
         <article class="nav-social">
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="850">
                 <a href="">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
-            <div>
+            <div data-aos="zoom-in" data-aos-delay="850">
                 <a href="">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
@@ -127,48 +129,49 @@
         <div class="background-grid"></div>
         <aside class="home-texts">
             <article class="home-badge-top">
-                <div>
+                <div data-aos="zoom-in" data-aos-delay="0">
                     <i class="fa-solid fa-crown"></i>
                 </div>
-                <span>A voz que mais conecta no desenvolvimento pessoal</span>
+                <span data-aos="fade-right" data-aos-delay="100">A voz que mais conecta no desenvolvimento pessoal</span>
             </article>
-            <h1>Transforme sua Vida com Quem <b>Vive o que Ensina</b></h1>
-            <p>Levo ao palco tudo que vivi na vida real, provando que, com inteligência emocional, esforço e as escolhas certas, qualquer pessoa pode superar limites.</p>
+            <h1 data-aos="fade-up" data-aos-delay="100">Transforme sua Vida com Quem <b>Vive o que Ensina</b></h1>
+            <p data-aos="fade-up" data-aos-delay="200">Levo ao palco tudo que vivi na vida real, provando que, com inteligência emocional, esforço e as escolhas certas, qualquer pessoa pode superar limites.</p>
             <div>
-                <button class="button">
+                <button class="button" data-aos="zoom-in" data-aos-delay="250">
                     <span class="button_lg">
                         <span class="button_sl"></span>
                         <span class="button_text">Entrar em contato</span>
                     </span>
                 </button>
                 
-                <a href="#sobre" class="c-button-shine" onclick="{alert('Clicou');}" >Conhecer o Yago Lopes</a>
+                <a data-aos="fade-right" data-aos-delay="450" href="#sobre" class="c-button-shine" onclick="{alert('Clicou');}" >Conhecer o Yago Lopes</a>
             </div>
-            <article class="home-badge-bottom">
+            <article class="home-badge-bottom" data-aos="fade-up" data-aos-delay="250">
                 <span>Cursos e palestras disponíveis entrando em contato</span>
             </article>
         </aside>
         <picture>
-            <img src="public/yago-lopes.png" alt="">
-            <img src="public/effect-blur.png" alt="">
+            <img src="public/yago-lopes.png" alt="foto-do-yago-lopes" loading="lazy" title="Yago Lopes">
+            <img src="public/effect-blur.png" alt="efeito-de-blur-atras-do-yago-lopes" loading="lazy">
         </picture>
     </main>
 </section>
 
 <section class="solucoes" id="solucoes">
+    <div class="background-grid"></div>
     <main class="solucoes-content">
         <aside class="c-header">
-                <div class="c-badge">
+                <div class="c-badge" data-aos="fade-up" data-aos-delay="200">
                     <div>
                         <i class="fa-brands fa-slack"></i>
                     </div>
                     <span>Soluções</span>
                 </div>
-                <h1>Soluções <b>focadas em te ajudar</b> a alcançar o sucesso</h1>
+                <h1 data-aos="fade-up" data-aos-delay="50">Soluções <b>focadas em te ajudar</b> a alcançar o sucesso</h1>
             </aside>
             <main class="solucoes-content">
                 <article>
-                    <section class="solucao-50">
+                    <section class="solucao-50" data-aos="fade-up" data-aos-delay="50">
                         <div>
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
@@ -180,7 +183,7 @@
                         </button>
                     </section>
 
-                    <section class="solucao-50">
+                    <section class="solucao-50" data-aos="fade-right" data-aos-delay="150">
                         <div>
                             <i class="fa-solid fa-microphone"></i>
                         </div>
@@ -192,7 +195,7 @@
                         </button>
                     </section>
                 </article>
-                <article>
+                <article data-aos="fade-up" data-aos-delay="200">
                     <section class="solucao-100">
                         <div>
                             <i class="fa-solid fa-screwdriver-wrench"></i>
@@ -231,19 +234,40 @@
             <div class="splide__track">
                 <ul class="splide__list">
                     <li class="splide__slide">
-                        <img src="public/casa-feita-pelo-yago-lopes-03.png" alt="">
+                        <img src="public/palestra-yago-lopes-01.jpg" alt="yago-lopes-palestrando" loading="lazy">
+                        <span>Yago Lopes - Palestrante</span>
                     </li>
                     <li class="splide__slide">
-                        <img src="public/casa-feita-pelo-yago-lopes-03.png" alt="">
+                        <img src="public/construcao-do-yago-lopes.jpg" alt="yago-lopes-construcao-de-casa-sala-de-estar" loading="lazy">
+                        <span>Yago Lopes - Construtor</span>
                     </li>
                     <li class="splide__slide">
-                        <img src="public/casa-feita-pelo-yago-lopes-03.png" alt="">
+                        <img src="public/construcao-do-yago-lopes-02.jpg" alt="yago-lopes-construcao-de-casa-coinha" loading="lazy">
+                        <span>Yago Lopes - Construtor</span>
                     </li>
                     <li class="splide__slide">
-                        <img src="public/casa-feita-pelo-yago-lopes-03.png" alt="">
+                        <img src="public/palestra-yago-lopes-02.jpg" alt="yago-lopes-palestrando" loading="lazy">
+                        <span>Yago Lopes - Palestrante</span>
                     </li>
                     <li class="splide__slide">
-                        <img src="public/casa-feita-pelo-yago-lopes-03.png" alt="">
+                        <img src="public/construcao-do-yago-lopes-03.jpg" alt="yago-lopes-construcao-de-casa-piscina" loading="lazy">
+                        <span>Yago Lopes - Construtor</span>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="public/construcao-do-yago-lopes-04.jpg" alt="yago-lopes-construcao-de-casa-sala" loading="lazy">
+                        <span>Yago Lopes - Construtor</span>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="public/palestra-yago-lopes-enics.jpg" alt="yago-lopes-palestrante-no-enics" loading="lazy">
+                        <span>Yago Lopes - Palestrante</span>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="public/construcao-do-yago-lopes-05.jpg" alt="yago-lopes-construcao-de-casa-cozinha-aberta" loading="lazy">
+                        <span>Yago Lopes - Construtor</span>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="public/construcao-do-yago-lopes-06.jpg" alt="yago-lopes-construcao-de-casa" loading="lazy">
+                        <span>Yago Lopes - Construtor</span>
                     </li>
                 </ul>
             </div>
@@ -297,6 +321,7 @@
 </section>
 
 <section class="depoimentos" id="depoimentos">
+    <div class="background-grid-2"></div>
     <main class="depoimentos-main">
         <aside class="c-header">
             <div class="c-badge">
@@ -312,15 +337,162 @@
             <aside>
                 <div class="depoimentos-person">
                     <picture>
-                        <img src="" alt="" loading="lazy" title="">
+                        <img src="public/image-depoimento-01.png" alt="depoimento-do-chefe-executivo-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
                     </picture>
                     <div>
-                        <h6>Juliana Souza <i class="fa-solid fa-certificate"></i></h6>
+                        <h6>
+                            Juliana Souza
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
                         <span>Chefe Executivo</span>
                     </div>
                 </div>
                 <p>
                     “O Yago fala com a alma. Em poucos minutos, ele me fez repensar decisões que carregava há anos. Suas palavras mexem com a gente de um jeito profundo e verdadeiro. Impactante!”
+                </p>
+            </aside>
+
+            <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-02.png" alt="depoimento-do-diretor-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Ricardo Tavares
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Diretor</span>
+                    </div>
+                </div>
+                <p>
+                   “Nunca imaginei que uma palestra pudesse transformar tanto minha visão sobre mim mesmo. O Yago tem uma forma única de nos fazer enxergar além das nossas limitações. Ele realmente transforma.”
+                </p>
+            </aside>
+
+            <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-03.png" alt="depoimento-da-construtora-executivo-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Lívia Costa
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Construtora</span>
+                    </div>
+                </div>
+                <p>
+                   “Ele tem o dom de despertar algo dentro da gente. Não é só motivação passageira — é mudança de verdade. Saí da palestra com vontade real de recomeçar e fazer diferente.”
+                </p>
+            </aside>
+
+            <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-04.png" alt="depoimento-do-gerente-de-obras-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Henrique Lopes
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Gerente de obras</span>
+                    </div>
+                </div>
+                <p>
+                   “O que diferencia o Yago é a verdade nas palavras. Ele vive o que fala, e isso faz toda a diferença. A gente sente que não é só discurso — é experiência, entrega e amor pelo que faz.”
+                </p>
+            </aside>
+
+            <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-05.png" alt="depoimento-do-palestrante-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Juliano Rocha
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Palestrante</span>
+                    </div>
+                </div>
+                <p>
+                   “Já participei de muitos treinamentos e palestras, mas a energia do Yago é única. Ele envolve, ensina e inspira com uma leveza que só quem tem propósito de verdade consegue transmitir.”
+                </p>
+            </aside>
+
+            <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-06.png" alt="depoimento-do-palestrante-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Eduardo M.
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Palestrante</span>
+                    </div>
+                </div>
+                <p>
+                   “Mais do que um palestrante, o Yago é um construtor de mentes fortes. Ele pega experiências reais e transforma em aprendizados poderosos que ficam com a gente pra vida toda.”
+                </p>
+            </aside>
+
+            <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-07.png" alt="depoimento-do-engenheiro-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Jorge F.
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Engenheiro</span>
+                    </div>
+                </div>
+                <p>
+                   “A forma como ele conecta inteligência emocional com a vida real é simplesmente brilhante. Tudo faz sentido. Ele tem uma clareza absurda ao falar de temas complexos de forma acessível.”
+                </p>
+            </aside>
+
+            <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-08.png" alt="depoimento-do-arquiteto-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Lucas Andrade.
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Arquiteto</span>
+                    </div>
+                </div>
+                <p>
+                   “Assisti à palestra sem grandes expectativas e saí de lá completamente mexido. O Yago toca em pontos que a gente evita encarar, mas que são necessários pra crescer.”
+                </p>
+            </aside>
+
+             <aside>
+                <div class="depoimentos-person">
+                    <picture>
+                        <img src="public/image-depoimento-09.png" alt="depoimento-do-construtor-sobre-o-yago-lopes" loading="lazy" title="Foto do autor">
+                    </picture>
+                    <div>
+                        <h6>
+                            Fernando Lemos.
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="fi_7641727"><g id="Layer_2" data-name="Layer 2"><path d="m21.187 10.007a3.457 3.457 0 0 1 -.864-.712 3.378 3.378 0 0 1 .277-1.141c.291-.821.62-1.751.092-2.474s-1.525-.7-2.4-.68a3.422 3.422 0 0 1 -1.155-.078 3.369 3.369 0 0 1 -.425-1.063c-.248-.845-.531-1.8-1.4-2.086-.838-.27-1.614.324-2.3.846a3.285 3.285 0 0 1 -1.012.631 3.285 3.285 0 0 1 -1.023-.631c-.684-.519-1.457-1.119-2.299-.845-.867.282-1.15 1.24-1.4 2.085a3.418 3.418 0 0 1 -.421 1.061 3.482 3.482 0 0 1 -1.157.08c-.878-.024-1.867-.05-2.4.68s-.2 1.653.092 2.473a3.336 3.336 0 0 1 .281 1.141 3.449 3.449 0 0 1 -.863.713c-.732.5-1.563 1.069-1.563 1.993s.831 1.491 1.563 1.993a3.449 3.449 0 0 1 .863.712 3.335 3.335 0 0 1 -.273 1.142c-.29.82-.618 1.75-.091 2.473s1.521.7 2.4.68a3.426 3.426 0 0 1 1.156.078 3.4 3.4 0 0 1 .424 1.063c.248.845.531 1.8 1.4 2.086a1.424 1.424 0 0 0 .431.068 3.382 3.382 0 0 0 1.868-.914 3.285 3.285 0 0 1 1.012-.631 3.285 3.285 0 0 1 1.023.631c.685.523 1.461 1.12 2.3.845.867-.282 1.15-1.24 1.4-2.084a3.388 3.388 0 0 1 .424-1.062 3.425 3.425 0 0 1 1.153-.08c.878.021 1.867.05 2.4-.68s.2-1.653-.092-2.474a3.38 3.38 0 0 1 -.281-1.139 3.436 3.436 0 0 1 .864-.713c.732-.5 1.563-1.07 1.563-1.994s-.834-1.492-1.567-1.993z" fill="#49adf4"></path><path d="m11 14.75a.745.745 0 0 1 -.53-.22l-2-2a.75.75 0 0 1 1.06-1.06l1.54 1.54 3.48-2.61a.75.75 0 0 1 .9 1.2l-4 3a.751.751 0 0 1 -.45.15z" fill="#fff"></path></g></svg>
+                        </h6>
+                        <span>Construtor</span>
+                    </div>
+                </div>
+                <p>
+                   “Foi a primeira vez que vi alguém falar sobre superação com tanta verdade. O Yago não romantiza nada, ele mostra a realidade — e isso inspira muito mais.”
                 </p>
             </aside>
         </main>
@@ -335,7 +507,56 @@
    
 </section>
 
+<footer class="footer">
+    <main class="footer-content">
+        <section class="footer-text">
+            <aside>
+                <h1>Yago Lopes</h1>
+                <div>
+                    <ul>
+                        <li><b>E-mail</b></li>
+                        <li><a href="">euyagolopes@gmail.com</a></li>
+                    </ul>
+                    <ul>
+                        <li><b>Telefone</b></li>
+                        <li><a href="">+55 (21) 99923-2930</a></li>
+                    </ul>
+                </div>
+            </aside>
+            <aside>
+               <h2>Quer entrar em contato diretamente com o Yago Lopes?</h2>
+                <button class="button" data-aos="zoom-in" data-aos-delay="250">
+                    <span class="button_lg">
+                        <span class="button_sl"></span>
+                        <span class="button_text">Entrar em contato</span>
+                    </span>
+                </button>
+            </aside>
+        </section>
+        <section class="footer-bottom">
+            <p>&copy EuYagoLopes 2025 | Todos os direitos reservados</p>
+            <aside>
+                <button> <i class="fa-brands fa-instagram"></i> @euyagolopes</button>
+                <button> <i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                <p>Desenvolvido por <a href="https://alephsramos.com.br" target="_blank"><img src="public/aleph-ramos-desenvolvedor-web.svg" alt="aleph-ramos-desenvolvedor-web" loading="eager" title="Aleph Desenvolvedor Web | @alephsramos"></a></p>
+            </aside>
+        </section>
+    </main>
+</footer>
+
 <script src="src/js/slide-portfolio.js"></script>
+<script>
+  AOS.init({
+    offset: 0, // distância em pixels do gatilho de scroll
+    delay: 0, // atraso entre o scroll e o início da animação (em ms)
+    duration: 1000, // duração da animação (em ms)
+    easing: 'ease-in0out', // função de easing
+    once: false, // se `true`, anima apenas uma vez
+    mirror: false, // se `true`, anima ao rolar para cima também
+    anchorPlacement: 'top-bottom', // posição do elemento que ativa a animação
+  });
+</script>
+
 
 </body>
 </html>

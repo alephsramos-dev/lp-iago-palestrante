@@ -62,7 +62,7 @@
             @media (max-width: 768px){
                 justify-content: center;
                 position: relative;
-                z-index: 5;
+                z-index: 1;
             }
 
             & div {
@@ -83,6 +83,7 @@
 
                 @media (max-width: 768px){
                     font-size: 12px;
+                    color: #fff;
                 }
             }
         }
@@ -162,6 +163,7 @@
 
             @media (max-width: 768px){
                 position: relative;
+                transform: scale(2.1);
             }
 
             &:nth-child(1){
@@ -171,12 +173,24 @@
             &:nth-child(2){
                 z-index: -1;
                 mix-blend-mode: hard-light;
+                animation: effect_rotate 4s linear infinite alternate-reverse;
 
                 @media (max-width: 768px){
                     position: absolute;
                 }
             }
         }
+    }
+}
+
+@keyframes effect_rotate {
+    0% {
+        transform: scale(1.8);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(2);
+        opacity: 0.6;
     }
 }
   

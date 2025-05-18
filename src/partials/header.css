@@ -8,7 +8,7 @@
     position: fixed;
     top: 15px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%)!important;
     border-radius: 10px;
     background-color: #00000020;
     backdrop-filter: blur(5px);
@@ -90,6 +90,7 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                transition: all .2s ease-in-out;
 
                 &:nth-child(1){
                     background-color: #A020F010;

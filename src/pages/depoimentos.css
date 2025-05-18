@@ -1,6 +1,22 @@
 .depoimentos {
     width: 100%;
     background-color: #000000;
+    position: relative;
+    overflow: hidden!important;
+    z-index: 0;
+
+    &::after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: 
+            linear-gradient(0deg, #00000070, rgba(0,0,0,0)),
+            linear-gradient(90deg, #00000070, rgba(0,0,0,0));
+        z-index: -2;
+    }
 }
 
 .depoimentos-main {
@@ -20,18 +36,18 @@
     padding: 5%;
 
     & .depoimentos-content {
-        border: 1px solid red;
         width: 100%;
         height: auto;
+        display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
+        gap: 15px;
 
         & aside {
-            border: 1px solid red;
-            width: 30%;
+            width: 32%;
             padding: 20px;
-            background-color: #00000070;
+            background-color: #000000;
             backdrop-filter: blur(5px);
             border-radius: 15px;    
             display: flex;
@@ -39,9 +55,14 @@
             align-items: flex-start;
             justify-content: center;
             gap: 15px;
+            border: 2px dashed #ffffff20;
+            box-shadow: 0 0 50px rgba(255, 0, 0, 0.1);
+
+            @media (max-width: 768px){
+                width: 100%;
+            }
 
             & .depoimentos-person {
-                border: 1px solid red;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -50,7 +71,6 @@
                 width: auto;
 
                 & picture {
-                    border: 1px solid red;
                     width: 50px;
                     height: 50px;
                     border-radius: 50%;
@@ -65,7 +85,6 @@
                 }
 
                 & div {
-                    border: 1px solid red;
                     display: flex;
                     flex-direction: column;
                     align-items: flex-start;
@@ -80,8 +99,8 @@
                         font-size: 18px;
                         font-weight: 400;
 
-                        & i {
-                            font-size: 14px;
+                        & svg {
+                            width: 18px;
                             color: #0080FF;
                         }
                     }
@@ -99,10 +118,5 @@
                 font-weight: 300;
             }
         }
-    }
-
-    & button {
-        padding: 10px;
-        border: 1px solid red;
     }
 }

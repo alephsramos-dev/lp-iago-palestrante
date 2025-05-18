@@ -1,0 +1,28 @@
+/* From Uiverse.io by milegelu */ 
+.background-grid-2 {
+    width: 100dvw;
+    left: -0%;
+    top: -0%;
+    height: 110%;
+    position: absolute;
+    z-index: -2;
+  
+    background: transparent;
+    --gap: 2em;
+    --line: 1px;
+    --color: #ffffff30;
+  
+    background-image: linear-gradient(
+        -90deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      ),
+      linear-gradient(
+        0deg,
+        transparent calc(var(--gap) - var(--line)),
+        var(--color) calc(var(--gap) - var(--line) + 1px),
+        var(--color) var(--gap)
+      );
+    background-size: var(--gap) var(--gap);
+}

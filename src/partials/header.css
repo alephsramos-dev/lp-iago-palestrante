@@ -170,12 +170,12 @@
             height: 100%;
             padding: 10px;
             border-radius: 10px;
-            background-color: #ffffff15;
-            border: 2px dashed #ffffff15;
+            background-color: #00000015;
+            border: 1px dashed #00000015;
             transition: all .2s ease-in-out;
 
             &:active{
-                background-color: #ffffff25;
+                background-color: #00000025;
             }
         }
       }

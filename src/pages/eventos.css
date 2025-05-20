@@ -36,7 +36,7 @@
         overflow: hidden;
 
         @media (max-width: 768px){
-            padding: 5% 2.5%;        
+            padding: 5% 0% 5% 2.5%;        
         }
 
         & .eventos-cards{
@@ -95,7 +95,7 @@
 
                     & > div {
                         width: 3px;
-                        height: 350px;
+                        height: 335px;
                         background: #bb000080;
                         position: absolute;
                         top: 35px;
@@ -116,11 +116,53 @@
                     min-height: 300px;
                     justify-content: center;
                     background: linear-gradient(45deg, #000000, #1d1d1d);
-                    border: 1px solid var(--color--red);
                     box-shadow: 0 0 50px rgba(155, 0, 0, 0.2);
                     padding: 10px;
                     border-radius: 10px;
                     position: relative;
+                    overflow: hidden;
+
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        border-radius: 12px;
+                        padding: 2px;
+                        background: transparent;
+                        z-index: 2;
+                        pointer-events: none;
+
+                        @media (max-width: 768px){
+                            padding: 1px!important;
+                        }
+                    }
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        inset: 0;
+                        border-radius: 12px;
+                        padding: 2px;
+                        background: linear-gradient(
+                            to right,
+                            transparent 0%,
+                            #bb0000 50%,
+                            transparent 100%
+                        );
+                        background-repeat: no-repeat;
+                        background-size: 400% 100%;
+                        animation: trace-light 12s linear infinite;
+                        z-index: 2;
+                        pointer-events: none;
+                        mask: 
+                            linear-gradient(#fff 0 0) content-box, 
+                            linear-gradient(#fff 0 0);
+                        mask-composite: exclude;
+                        -webkit-mask: 
+                            linear-gradient(#fff 0 0) content-box, 
+                            linear-gradient(#fff 0 0);
+                        -webkit-mask-composite: destination-out;
+                    }
 
                     @media (max-width: 768px){
                         flex-direction: column-reverse;
@@ -235,4 +277,13 @@
             }
         }
     }
+}
+
+@keyframes trace-light {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
 }

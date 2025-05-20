@@ -39,7 +39,21 @@
 </head>
 <body>
 
-<button class="button-ig">
+<script>
+    function abrirWhatsApp() {
+      const numero = '5521987216465'; // Coloque aqui o número com DDI e DDD, sem espaços ou símbolos
+      const mensagem = 'Olá! Vim do site, gostaria de falar com o Yago Lopes.'; // Mensagem opcional
+      const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+      window.open(url, '_blank');
+    }
+
+    function abrirInstagram() {
+        const ig = 'https://www.instagram.com/euyagolopes/';
+        window.open(ig, '_blank');
+    }
+</script>
+
+<button class="button-ig" onclick="abrirInstagram()">
   <p class="button__text">
     
     <span style="--index: 0;">E</span>
@@ -100,17 +114,17 @@
             <li data-aos="fade-left" data-aos-delay="150"><a href="#solucoes">Soluções</a></li>
             <li data-aos="fade-left" data-aos-delay="300"><a href="#portfolio">Portfolio</a></li>
             <li data-aos="fade-left" data-aos-delay="450"><a href="#sobre">Yago Lopes</a></li>
-            <li data-aos="fade-left" data-aos-delay="600"><a href="#experiencia">Experiências</a></li>
+            <li data-aos="fade-left" data-aos-delay="600"><a href="#depoimentos">Experiências</a></li>
             <li data-aos="fade-left" data-aos-delay="750"><a href="#eventos">Eventos</a></li>
         </ul>
         <article class="nav-social">
             <div data-aos="zoom-in" data-aos-delay="850">
-                <a href="">
+                <a href="https://www.instagram.com/euyagolopes/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
             </div>
             <div data-aos="zoom-in" data-aos-delay="850">
-                <a href="">
+                <a onclick="abrirWhatsApp()">
                     <i class="fa-brands fa-whatsapp"></i>
                 </a>
             </div>
@@ -148,14 +162,14 @@
             <h1 data-aos="fade-up" data-aos-delay="100">Transforme sua Vida com Quem <b>Vive o que Ensina</b></h1>
             <p data-aos="fade-up" data-aos-delay="200">Levo ao palco tudo que vivi na vida real, provando que, com inteligência emocional, esforço e as escolhas certas, qualquer pessoa pode superar limites.</p>
             <div>
-                <button class="button" data-aos="zoom-in" data-aos-delay="250">
+                <button class="button" data-aos="zoom-in" data-aos-delay="250" onclick="abrirWhatsApp()">
                     <span class="button_lg">
                         <span class="button_sl"></span>
                         <span class="button_text">Entrar em contato</span>
                     </span>
                 </button>
                 
-                <a data-aos="fade-right" data-aos-delay="450" href="#sobre" class="c-button-shine" onclick="{alert('Clicou');}" >Conhecer o Yago Lopes</a>
+                <a data-aos="fade-right" data-aos-delay="450" href="#sobre" class="c-button-shine" >Conhecer o Yago Lopes</a>
             </div>
             <article class="home-badge-bottom" data-aos="fade-up" data-aos-delay="250">
                 <span>Cursos e palestras disponíveis entrando em contato</span>
@@ -188,9 +202,9 @@
                     </div>
                     <h2>Cursos especializados</h2>
                     <p>Com o Yago Lopes como seu mentor, você terá o melhor acompanhamento possivel para se desenvolver</p>
-                    <button class="c-button-back-shine" onclick="{alert('Clicou');}">
+                    <button class="c-button-back-shine" onclick="abrirWhatsApp()"">
                         <div class="dots_border"></div>
-                        <span class="text_button">Conhecer curso</span>
+                        <span class="text_button" >Conhecer curso</span>
                     </button>
                 </section>
 
@@ -200,12 +214,13 @@
                     </div>
                     <h2>Palestras</h2>
                     <p>Palestras que irão transformar seu modo de pensar sobre tudo, tenha um desenvolvimento agora!</p>
-                    <button class="c-button-back-shine" onclick="{alert('Clicou');}">
+                    <button class="c-button-back-shine" onclick="abrirWhatsApp()"">
                         <div class="dots_border"></div>
                         <span class="text_button">Quero ir na palestra</span>
                     </button>
                 </section>
             </article>
+
             <article data-aos="fade-up" data-aos-delay="200">
                 <section class="solucao-100">
                     <div>
@@ -213,7 +228,7 @@
                     </div>
                     <h2>Construção de obras</h2>
                     <p>Tem um projeto estrutural? Quer construir sua casa ou sua loja? Com Yago Lopes, sua ideia sai do papel e se transforma em realidade com qualidade, seriedade e paixão por construir sonhos.</p>
-                    <button class="c-button-back-shine" onclick="{alert('Clicou');}">
+                    <button class="c-button-back-shine" onclick="abrirWhatsApp()"">
                         <div class="dots_border"></div>
                         <span class="text_button">Fazer minha obra</span>
                     </button>
@@ -404,7 +419,7 @@
         </div>
 
         <article class="portfolio-buttons">
-            <button class="button">
+            <button class="button" onclick="abrirWhatsApp()">
                 <span class="button_lg">
                     <span class="button_sl"></span>
                     <span class="button_text">Entrar em contato</span>
@@ -432,7 +447,7 @@
 
             <p>Com 18 anos de experiência na construção civil e uma trajetória crescente no desenvolvimento pessoal, ele entende, na prática, o que é começar do zero, enfrentar desafios e transformar esforço em resultado. Sua missão vai além de ensinar: ele inspira, provoca mudanças reais e mostra, com clareza e verdade, que qualquer pessoa pode alcançar uma vida com propósito — basta aprender a dominar as emoções, vencer crenças limitantes e tomar as decisões certas. Se você está pronto para evoluir, Yago é o mentor que vai te mostrar o caminho, com palavra firme, energia contagiante e um coração dedicado a ver você crescer.</p>
 
-            <button class="button">
+            <button class="button" onclick="abrirWhatsApp()">
                 <span class="button_lg">
                     <span class="button_sl"></span>
                     <span class="button_text">Entrar em contato com o Yago Lopes</span>
@@ -623,7 +638,7 @@
             </aside>
         </main>
 
-         <button class="button">
+         <button class="button" onclick="abrirWhatsApp()">
             <span class="button_lg">
                 <span class="button_sl"></span>
                 <span class="button_text">Entrar em contato com o Yago Lopes</span>
@@ -666,7 +681,7 @@
                         </aside>
                         <h1>Yago Lopes na visita a mostra artefacto</h1>
                         <p>Visitamos a Mostra Artefacto em São Paulo, um evento que celebra o melhor do design contemporâneo com elegância e inovação.</p>
-                        <a data-aos="fade-right" data-aos-delay="450" href="#sobre" class="c-button-shine" onclick="{alert('Clicou');}" >Entrar em contato</a>
+                        <a data-aos="fade-right" data-aos-delay="450" class="c-button-shine" onclick="abrirWhatsApp()" >Entrar em contato</a>
                     </div>
                     <div class="e-card-image">
                         <img src="public/event-mostra-artefacto.png" alt="" loading="lazy">
@@ -693,7 +708,7 @@
                         </aside>
                         <h1>Início do Curso de empreendedorismo</h1>
                         <p>Início do curso de empreendedorismo do 'Por Fora das Paredes': um projeto social que acredita no poder das ideias e da ação.</p>
-                        <a data-aos="fade-right" data-aos-delay="450" href="#sobre" class="c-button-shine" onclick="{alert('Clicou');}" >Participar do curso</a>
+                        <a data-aos="fade-right" data-aos-delay="450" class="c-button-shine" onclick="abrirWhatsApp()" >Participar do curso</a>
                     </div>
                     <div class="e-card-image">
                         <img src="public/event-curso-empreendorismo.png" alt="" loading="lazy">
@@ -720,7 +735,7 @@
                         </aside>
                         <h1>yago lopes no Podcast da claudia barcelos</h1>
                         <p>Yago Lopes é o convidado do podcast da Claudia Barcelos. Uma troca autêntica sobre caminhos e conquistas.</p>
-                        <a data-aos="fade-right" data-aos-delay="450" href="#sobre" class="c-button-shine" onclick="{alert('Clicou');}" >Participar do podcast</a>
+                        <a data-aos="fade-right" data-aos-delay="450" class="c-button-shine" onclick="abrirWhatsApp()" >Participar do podcast</a>
                     </div>
                     <div class="e-card-image">
                         <img src="public/event-podcast-claudia.png" alt="" loading="lazy">
@@ -746,7 +761,7 @@
                         </aside>
                         <h1>YAGO LOPES NA ENTREVISTA COM A RESENHA DE NEGÓCIOS</h1>
                         <p>Na Resenha de Negócios, Yago Lopes compartilha sua visão sobre empreender com propósito e transformar realidades.</p>
-                        <a data-aos="fade-right" data-aos-delay="450" href="#sobre" class="c-button-shine" onclick="{alert('Clicou');}" >Participar da resenha</a>
+                        <a data-aos="fade-right" data-aos-delay="450" class="c-button-shine" onclick="abrirWhatsApp()" >Participar da resenha</a>
                     </div>
                     <div class="e-card-image">
                         <img src="public/event-resenha.png" alt="" loading="lazy">
@@ -765,17 +780,17 @@
                 <div>
                     <ul>
                         <li><b>E-mail</b></li>
-                        <li><a href="">euyagolopes@gmail.com</a></li>
+                        <li><a href="mailto:euyagolopes@gmail.com">euyagolopes@gmail.com</a></li>
                     </ul>
                     <ul>
                         <li><b>Telefone</b></li>
-                        <li><a href="">+55 (21) 99923-2930</a></li>
+                        <li><a onclick="abrirWhatsApp()">+55 (21) 99923-2930</a></li>
                     </ul>
                 </div>
             </aside>
             <aside>
                <h2>Quer entrar em contato diretamente com o Yago Lopes?</h2>
-                <button class="button" data-aos="zoom-in" data-aos-delay="250">
+                <button class="button" data-aos="zoom-in" data-aos-delay="250" onclick="abrirWhatsApp()">
                     <span class="button_lg">
                         <span class="button_sl"></span>
                         <span class="button_text">Entrar em contato</span>
@@ -786,8 +801,8 @@
         <section class="footer-bottom">
             <p>&copy EuYagoLopes 2025 | Todos os direitos reservados</p>
             <aside>
-                <button> <i class="fa-brands fa-instagram"></i> @euyagolopes</button>
-                <button> <i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
+                <button onclick="abrirInstagram()"> <i class="fa-brands fa-instagram"></i> @euyagolopes</button>
+                <button onclick="abrirWhatsApp()"> <i class="fa-brands fa-whatsapp"></i> WhatsApp</button>
                 <p>Desenvolvido por <a href="https://alephsramos.com.br" target="_blank"><img src="public/aleph-ramos-desenvolvedor-web.svg" alt="aleph-ramos-desenvolvedor-web" loading="eager" title="Aleph Desenvolvedor Web | @alephsramos"></a></p>
             </aside>
         </section>

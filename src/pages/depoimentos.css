@@ -1,9 +1,9 @@
 .depoimentos {
-    width: 100%;
-    background-color: #000000;
+    background: #000;
     position: relative;
-    overflow: hidden!important;
     z-index: 0;
+    width: 100%;
+    overflow: hidden;
 
     &::after{
         content: '';
@@ -12,10 +12,9 @@
         position: absolute;
         left: 0;
         top: 0;
-        background: 
-            linear-gradient(0deg, #00000070, rgba(0,0,0,0)),
-            linear-gradient(90deg, #00000070, rgba(0,0,0,0));
-        z-index: -2;
+        background: linear-gradient(0deg, #000000, #00000000 70%),
+                linear-gradient(180deg, #000000, #00000000 70%);
+        z-index: -1;
     }
 }
 
@@ -33,7 +32,7 @@
     top: 0;
     transform: translateX(-50%);
     gap: 50px;
-    padding: 5%;
+    padding: 5% 5% 0 5%;
 
     @media (max-width: 768px){    
         padding: 10% 5%;
